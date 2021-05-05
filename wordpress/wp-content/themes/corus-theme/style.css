@@ -1,4 +1,36 @@
 /*
  Theme Name:   Corus WordPress Exercise
  Version:      1.0.2
+ Author:       vanstoneonline
 */
+
+body {
+    color: #000;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.container {
+    width: 900px;
+    margin: 1em auto;
+    border: 1px solid #000;
+    
+}
+.container img {
+    margin: auto; 
+    width: 100%;
+    height: auto;
+}
+.slick-prev:before, .slick-next:before  {
+    color: gray ! important;
+}
+
+.site-info{
+    margin: 0 auto;
+    text-align: center;
+}
