@@ -78,7 +78,7 @@ function custom_post_type() {
 			// Features this CPT supports in Post Editor
 			'supports'            => array( 'title', 'custom-fields', ),
 			// You can associate this CPT with a taxonomy or custom taxonomy. 
-			'taxonomies'          => array( 'genres' ),
+			'taxonomies'          => array( 'gallery' ),
 			/* A hierarchical CPT is like Pages and can have
 			* Parent and child items. A non-hierarchical CPT
 			* is like Posts.
@@ -144,3 +144,10 @@ add_action( 'after_setup_theme', 'corus_setup' );
   *
   */
  include 'includes/custom-meta-boxes.php';
+
+
+ function corus_add_signature() {
+
+	return 'Corus One WP Excerise by: Jason Vanstone';
+ }
+ add_filter( 'bloginfo', 'corus_add_signature', 10 );
