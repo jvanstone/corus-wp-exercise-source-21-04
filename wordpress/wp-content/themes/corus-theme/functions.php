@@ -76,9 +76,10 @@ function custom_post_type() {
 			'description'         => __( 'Gallery', 'corusone' ),
 			'labels'              => $labels,
 			// Features this CPT supports in Post Editor
-			'supports'            => array( 'title', 'custom-fields', ),
+			'supports'            => array( 'title', 'corusone', ),
 			// You can associate this CPT with a taxonomy or custom taxonomy. 
 			'taxonomies'          => array( 'gallery' ),
+			'menu_icon' => 'dashicons-format-gallery',
 			/* A hierarchical CPT is like Pages and can have
 			* Parent and child items. A non-hierarchical CPT
 			* is like Posts.
