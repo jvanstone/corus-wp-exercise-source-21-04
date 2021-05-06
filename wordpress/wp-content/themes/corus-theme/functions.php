@@ -6,8 +6,8 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @subpackage Corus_One
+ * @since Corus One 1.0
  */
 
  // This theme requires WordPress 5.3 or later.
@@ -133,7 +133,7 @@ add_action( 'after_setup_theme', 'corus_setup' );
 	
 	wp_enqueue_script( 'jQuery' , 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), wp_get_theme()->get( 'Version' ) ); 
 	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/components/slick-slider/slick.min.js', array('jQuery'), wp_get_theme()->get( 'Version' ), true );
-	wp_enqueue_script( 'slick-setup', get_template_directory_uri() . '/components/slick-slider/slick-setup.js', array(), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'slick-setup', get_template_directory_uri() . '/components/slick-slider/slick-setup.js', array('jQuery'), wp_get_theme()->get( 'Version' ), true );
 
 }
  add_action( 'wp_enqueue_scripts', 'corus_scripts' );
