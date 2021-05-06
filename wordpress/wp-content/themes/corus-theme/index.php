@@ -22,9 +22,14 @@ if ( have_posts() ) {
 	// Load posts loop.
 	while ( have_posts() ) {
 		the_post();
+			 	
+    // Get the current post type
 
 		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
 	}
+
+
+	_e( '<h2><a href="' . get_permalink(5) . '">Go to Gallery</a></h2>' , 'corusone' );
 
 } else {
 
