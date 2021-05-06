@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Functions and definitions
  *
@@ -134,6 +133,7 @@ add_action( 'after_setup_theme', 'corus_setup' );
 	wp_enqueue_script( 'jQuery' , 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), wp_get_theme()->get( 'Version' ) ); 
 	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/components/slick-slider/slick.min.js', array('jQuery'), wp_get_theme()->get( 'Version' ), true );
 	wp_enqueue_script( 'slick-setup', get_template_directory_uri() . '/components/slick-slider/slick-setup.js', array('jQuery'), wp_get_theme()->get( 'Version' ), true );
+
 
 }
  add_action( 'wp_enqueue_scripts', 'corus_scripts' );
